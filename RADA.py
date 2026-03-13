@@ -118,7 +118,7 @@ class DependencyMapper:
         tree = ast.parse(code)
 
         imports = []
-
+  
         for node in ast.walk(tree):
 
             if isinstance(node, ast.Import):
